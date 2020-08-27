@@ -1,0 +1,65 @@
+$yale-blue: #054A91;
+$steel-blue: #3E7CB1;
+$iceberg: #81A4CD;
+$alice-blue: #DBE4EE;
+$heat-wave: #F17300;
+
+.table-row {
+  &:hover {
+    background-color: $alice-blue;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: Roboto, sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.0rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.MuiAutocomplete-root.Mui-focused {
+  .MuiTextField-root {
+    label.MuiFormLabel-root.Mui-focused {
+      color: $steel-blue;
+    }
+
+    fieldset.MuiOutlinedInput-notchedOutline {
+      border-color: $steel-blue;
+    }
+  }
+}
+
+.tooltip {
+  pointer-events: auto !important;
+  font-size: 1rem;
+  max-width: 400px;
+  line-height: 1.4;
+
+  &:hover {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+
+.info-icon {
+  &:hover {
+    cursor: pointer;
+  }
+}

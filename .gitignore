@@ -1,0 +1,25 @@
+# Website stuff
+node_modules/
+public/
+build/
+
+# Secret file
+python/fetch/secret.py
+
+# data files
+python/data/
+python/json/
+
+# Misc
+.cache/
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+
+# Data used by the website
+src/resources/characterRankingsData.json
+src/resources/matchupData.json
+src/resources/stageData.json
+
+# Raw dataset served by the website
+static/full_raw_data.csv
