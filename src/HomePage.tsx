@@ -317,7 +317,7 @@ export const HomePage = () => {
         <Grid container className={classes.updateGridContainer} spacing={3} justify={'flex-start'}>
           <Grid item xs={12}>
             <h2>Update</h2>
-            <p>5:13pm CST August 27, 2020</p>
+            <p>5:13pm CST August 28, 2020</p>
             <p>
               The data on the website is now correct.
               I sincerely apologize for the misinformation.
