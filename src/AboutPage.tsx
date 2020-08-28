@@ -28,6 +28,12 @@ export const AboutPage = () => {
         <CardContent>
           <h1>About</h1>
           <p>This website shows Smash Ultimate game statistics collected from about 1.4 million online tournament games recorded on <a href="https://smash.gg/">smash.gg</a>.</p>
+          <p>
+            The full data set can be downloaded by clicking <a href="/full_raw_data.csv">here</a>.
+          </p>
+          <p>
+            The source code for the website and data fetching can be found <a href="https://github.com/mountainvalleycode/ultimategamedata">here</a>.
+          </p>
           <p>If you have questions, comments, or feedback, feel free to grab a hold of me on Reddit: u/mountainvalley.</p>
         </CardContent>
       </Card>
@@ -35,10 +41,13 @@ export const AboutPage = () => {
       <Card className={classes.card} variant="outlined">
         <CardContent>
           <h1>Status</h1>
-          <h3>Message made at blahpm CST on August 27, 2020:</h3>
+          <h3>5:16 CST on August 28, 2020:</h3>
           <p>The data issue is now resolved, and the website is showing the correct statistics.</p>
 
-          <h3>Message made at 6:53pm CST on August 26, 2020:</h3>
+          <h3>7:35pm CST on August 27, 2020:</h3>
+          <p>We have the data set re-downloaded, and we are waiting for an independent script to finish running to verify the results.</p>
+
+          <h3>6:53pm CST on August 26, 2020:</h3>
           <p>We discovered a problem with the data displayed on this website. We are currently working to fix the issue and will update the website as soon as we can. The issue is expected to be resolved within 24 hours. We are really sorry for the inconvenience.</p>
         </CardContent>
       </Card>
@@ -87,7 +96,7 @@ export const AboutPage = () => {
             I was too eager and failed to take the necessary steps to make sure I was spreading correct information.
           </p>
           <p>
-            I am really sorry for what happened, and I am embarrassed by this mistake.
+            I am really sorry for what happened, and I am embarrassed by this whole situation and my mistake.
             I wanted this website to be a source of truth for Smash Ultimate game data, but it has been the exact opposite.
             I know I have broken the trust of many people, and that this website may lose all credibility because of that.
             I am working hard to make this situation better.
@@ -95,10 +104,23 @@ export const AboutPage = () => {
           <p>
             To prevent this kind of mistake from happening again, I'm making the data set used by the website available to download <a href="/full_raw_data.csv">here</a>.
             The data set includes the tournament name, event name, and player names so that even non-programmers can verify individual games.
+            In addition, I've open-sourced all the code <a href="https://github.com/mountainvalleycode/ultimategamedata">here</a>, for those who want to take a look. The more eyes, the better!
+          </p>
+          <p>
+            I think there's 2 lessons to be learned here.
+            One is to not blindly trust what you see on the internet, no matter how many upvotes it has.
+            I do this implicitly on a day-to-day basis.
+            While it's infeasible to fact-check everything you come across, it's important to keep in mind that there is a possibility of misinformation.
+          </p>
+          <p>
+            The second is that, when spreading information as I did, it is even more important to fact check to make sure you're not spreading false information.
+            I needed to sanity check and triple check the code and data to make sure there hadn't been a mistake somewhere along the way, and I failed to do that.
+          </p>
+          <p>
+            Moving foward from here, I will make sure to follow due diligence to avoid something like this from happening again.
           </p>
         </CardContent>
       </Card>
-
     </Container>
   );
 };
