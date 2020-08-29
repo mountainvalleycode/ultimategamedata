@@ -34,7 +34,7 @@ export const AboutPage = () => {
           <p>
             The source code for the website and data fetching can be found <a href="https://github.com/mountainvalleycode/ultimategamedata">here</a>.
           </p>
-          <p>If you have questions, comments, or feedback, feel free to grab a hold of me on Reddit: u/mountainvalley.</p>
+          <p>If you have questions, comments, or feedback, feel free to grab a hold of me on Reddit: u/mountainorvalley.</p>
         </CardContent>
       </Card>
 
