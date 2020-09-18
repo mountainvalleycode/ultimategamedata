@@ -80,7 +80,7 @@ def main(mode):
     )
 
     if mode == 'events':
-        end_timestamp = int(datetime.datetime(2020, 9, 1).timestamp())
+        end_timestamp = int(datetime.datetime(2020, 9, 10).timestamp())
         fetch_tournaments(client, end_timestamp)
     elif mode == 'games':
         fetch_events(client)
