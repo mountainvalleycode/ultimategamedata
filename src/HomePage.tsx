@@ -23,13 +23,6 @@ function getHeadIconUrl(char_slug: string): string {
 }
 
 const useStyles = makeStyles((theme) => ({
-  updateGridContainer: {
-    backgroundColor: 'rgba(255, 237, 131, 0.5)',
-    marginTop: '0',
-    marginBottom: '1.45rem',
-    borderRadius: '4px',
-  },
-
   root: {
     flexGrow: 1,
   },
@@ -313,19 +306,6 @@ export const HomePage = () => {
   const classes = useStyles();
   return (
     <Container>
-      <div className={classes.root}>
-        <Grid container className={classes.updateGridContainer} spacing={3} justify={'flex-start'}>
-          <Grid item xs={12}>
-            <h2>Update</h2>
-            <p>5:13pm CST August 28, 2020</p>
-            <p>
-              The data on the website is now correct.
-              I sincerely apologize for the misinformation.
-              <br/><a href="/about">My apology.</a>
-            </p>
-          </Grid>
-        </Grid>
-      </div>
       <CharacterStats characters={characters}/>
       <MatchupStatsSection characters={characters}/>
       <StageStats stages={stages}/>
