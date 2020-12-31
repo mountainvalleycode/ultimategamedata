@@ -83,6 +83,10 @@ function getMatchupStatsOnStage(charSlug1: string, charSlug2: string, stageSlug:
   const winKey = orientation ? 'wins' : 'losses';
   const loseKey = orientation ? 'losses' : 'wins';
 
+  if (allMatchupStats[charSlugKey1][charSlugKey2] === undefined || allMatchupStats[charSlugKey1][charSlugKey2][stageSlug] === undefined) {
+    return [0, 0];
+  }
+
   return [
     allMatchupStats[charSlugKey1][charSlugKey2][stageSlug][winKey],
     allMatchupStats[charSlugKey1][charSlugKey2][stageSlug][loseKey],
