@@ -21,7 +21,7 @@ export const AboutPage = () => {
       <Card className={classes.card} variant="outlined">
         <CardContent>
           <h1>About</h1>
-          <p>This website shows Smash Ultimate game statistics collected from about 1.4 million online tournament games recorded on <a href="https://smash.gg/">smash.gg</a>.</p>
+          <p>This website shows Smash Ultimate game statistics collected from about 2 million online tournament games recorded on <a href="https://smash.gg/">smash.gg</a>.</p>
           <p>
             The full data set can be downloaded by clicking <a href="/full_raw_data.csv">here</a>.
           </p>
