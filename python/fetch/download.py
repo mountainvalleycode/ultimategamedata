@@ -41,7 +41,7 @@ def fetch_events(client):
     tournament_id, event_id = database_client.get_unprocessed_event()
 
     while event_id is not None:
-        print(f'Processing event {event_id}...')
+        print(f'Processing event {event_id} ...')
 
         # Get all the sets of the tournament
         event_sets = []
@@ -80,7 +80,7 @@ def main(mode):
     )
 
     if mode == 'events':
-        end_timestamp = int(datetime.datetime(2020, 12, 25).timestamp())
+        end_timestamp = int(datetime.datetime(2021, 3, 15).timestamp())
         fetch_tournaments(client, end_timestamp)
     elif mode == 'games':
         fetch_events(client)

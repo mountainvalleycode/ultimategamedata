@@ -43,7 +43,7 @@ python3 fetch/download.py games
 
 ### 3. Extract all the games from mysql and put inside csv file
 ```
-mkdir csv
+mkdir data
 python3 export_to_csv.py
 ```
 
@@ -58,6 +58,11 @@ mkdir json
 python3 processed_data_to_json.py
 ```
 
+### 6. Get the data to the website
+```
+cp python/json/* src/resources/
+```
+
 ## To run the website
 Roughly,
 ```
@@ -65,3 +70,6 @@ npm install
 npm start
 npm run serve
 ```
+
+## Misc
+Get head icons from https://www.ssbwiki.com/Category:Head_icons_(SSBU)

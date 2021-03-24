@@ -29,6 +29,7 @@ df.drop(df[invalid_char_condition].index, inplace=True)
 # Remove any non-standard stages
 standard_stages = [
     'Battlefield',
+    'Small Battlefield',
     'Final Destination',
     'Kalos Pokémon League',
     'Lylat Cruise',

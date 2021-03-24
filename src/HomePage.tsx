@@ -14,6 +14,7 @@ import { navigate, characterLink, matchupLink, stageLink, rankingsLink } from '.
 
 import { SelectComponent, ISelectItem } from './SelectComponent';
 import { Header } from './Header';
+import { Notice } from './Notice';
 
 import * as styles from './styles';
 
@@ -306,6 +307,7 @@ export const HomePage = () => {
   const classes = useStyles();
   return (
     <Container>
+      <Notice/>
       <CharacterStats characters={characters}/>
       <MatchupStatsSection characters={characters}/>
       <StageStats stages={stages}/>
