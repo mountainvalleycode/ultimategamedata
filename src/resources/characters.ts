@@ -87,4 +87,6 @@ export const characterNames: IIndexable = {
   "steve": "Steve",
   "sephiroth": "Sephiroth",
   "pyra_and_mythra": "Pyra & Mythra",
+  "kazuya": "Kazuya",
 };
+
